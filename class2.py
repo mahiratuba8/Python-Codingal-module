@@ -2,7 +2,7 @@ class fruit:
     #Taste = sweet is a class variable
     taste="sweet"
     #instance variable
-    def _init_(self, name, color):
+    def __init__(self, name, color):
         self.name=name
         self.color=color
 #object creation
