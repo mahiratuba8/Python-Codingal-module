@@ -11,3 +11,21 @@ class daughter(mother):
 
 obj=daughter("hazel","curly")
 obj.display()
+
+class teacher:
+    def __init__(self, name, closs, school):
+        self.name=name
+        self.closs=closs
+        self.school=school
+    def display(self):
+        print("Hi,", self.name)
+        print("You are in class", self.closs)
+        print("You go to ", self.school)
+
+class student(teacher):
+        def __init__(self,name,closs, school):
+            super().__init__(name,closs, school)
+
+    
+obj=student("Emilia","10D", "ISGR")
+obj.display()
